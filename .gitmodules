@@ -1,0 +1,3 @@
+[submodule "Libraries/OpenUUID"]
+	path = Libraries/OpenUUID
+	url = https://github.com/ylechelle/OpenUDID.git

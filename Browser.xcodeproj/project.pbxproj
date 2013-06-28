@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C551250177DBE9A002139A6 /* DeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C55124F177DBE9A002139A6 /* DeviceViewController.m */; };
+		8C551253177DCF93002139A6 /* ODIN.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C551252177DCF93002139A6 /* ODIN.m */; };
+		8C551259177DD3C5002139A6 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C551258177DD3C5002139A6 /* OpenUDID.m */; };
 		8CD4C7AC177C82AF004143A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD4C7AB177C82AF004143A6 /* UIKit.framework */; };
 		8CD4C7AE177C82AF004143A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD4C7AD177C82AF004143A6 /* Foundation.framework */; };
 		8CD4C7B0177C82AF004143A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD4C7AF177C82AF004143A6 /* CoreGraphics.framework */; };
@@ -28,6 +31,12 @@
 
 /* Begin PBXFileReference section */
 		8C49E579177D7FF6009C371B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8C55124E177DBE9A002139A6 /* DeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceViewController.h; sourceTree = "<group>"; };
+		8C55124F177DBE9A002139A6 /* DeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceViewController.m; sourceTree = "<group>"; };
+		8C551251177DCF93002139A6 /* ODIN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ODIN.h; path = Browser/ODIN.h; sourceTree = "<group>"; };
+		8C551252177DCF93002139A6 /* ODIN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ODIN.m; path = Browser/ODIN.m; sourceTree = "<group>"; };
+		8C551257177DD3C5002139A6 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenUDID.h; path = Libraries/OpenUUID/OpenUDID.h; sourceTree = "<group>"; };
+		8C551258177DD3C5002139A6 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenUDID.m; path = Libraries/OpenUUID/OpenUDID.m; sourceTree = "<group>"; };
 		8CD4C7A8177C82AF004143A6 /* Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Browser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CD4C7AB177C82AF004143A6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8CD4C7AD177C82AF004143A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -67,9 +76,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C551254177DD391002139A6 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				8C551256177DD3B2002139A6 /* OpenUUID */,
+				8C551255177DD3A3002139A6 /* ODIN1 */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		8C551255177DD3A3002139A6 /* ODIN1 */ = {
+			isa = PBXGroup;
+			children = (
+				8C551251177DCF93002139A6 /* ODIN.h */,
+				8C551252177DCF93002139A6 /* ODIN.m */,
+			);
+			name = ODIN1;
+			sourceTree = "<group>";
+		};
+		8C551256177DD3B2002139A6 /* OpenUUID */ = {
+			isa = PBXGroup;
+			children = (
+				8C551257177DD3C5002139A6 /* OpenUDID.h */,
+				8C551258177DD3C5002139A6 /* OpenUDID.m */,
+			);
+			name = OpenUUID;
+			sourceTree = "<group>";
+		};
 		8CD4C79F177C82AF004143A6 = {
 			isa = PBXGroup;
 			children = (
+				8C551254177DD391002139A6 /* Libraries */,
 				8CD4C7B1177C82AF004143A6 /* Browser */,
 				8CD4C7AA177C82AF004143A6 /* Frameworks */,
 				8CD4C7A9177C82AF004143A6 /* Products */,
@@ -111,6 +148,8 @@
 				8CD4C7D3177C82B0004143A6 /* second.png */,
 				8CD4C7D5177C82B0004143A6 /* second@2x.png */,
 				8CD4C7B2177C82AF004143A6 /* Supporting Files */,
+				8C55124E177DBE9A002139A6 /* DeviceViewController.h */,
+				8C55124F177DBE9A002139A6 /* DeviceViewController.m */,
 			);
 			path = Browser;
 			sourceTree = "<group>";
@@ -204,6 +243,9 @@
 				8CD4C7BC177C82AF004143A6 /* AppDelegate.m in Sources */,
 				8CD4C7CB177C82B0004143A6 /* FirstViewController.m in Sources */,
 				8CD4C7D2177C82B0004143A6 /* WebViewController.m in Sources */,
+				8C551250177DBE9A002139A6 /* DeviceViewController.m in Sources */,
+				8C551253177DCF93002139A6 /* ODIN.m in Sources */,
+				8C551259177DD3C5002139A6 /* OpenUDID.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
